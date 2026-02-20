@@ -5,9 +5,17 @@ import Contatore from "@/components/Contatore"
 import Lampadina from "@/components/Lampadina"
 import data from "@/data/data";
 
+import { useState } from "react";
+
 export default function Home() {
 
   const x = 42;
+
+  const [isOn, setIsOn] = useState(true);
+
+  function toggleLampadina() {
+    setIsOn(!isOn);
+  }
 
   return (
     <>
@@ -19,7 +27,10 @@ export default function Home() {
       </Head>
       <Componente proprieta={x} />
       <Contatore />
-      <Lampadina />
+
+      <Lampadina isOn={isOn} />
+      <button onClick={toggleLampadina}>{isOn ? "Spegni" : "Accendi"}</button>
+
     </>
   );
 }

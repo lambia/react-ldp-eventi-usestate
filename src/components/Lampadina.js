@@ -1,18 +1,8 @@
-import { useState } from "react";
-
-export default function Lampadina() {
-
-	const [isOn, setIsOn] = useState(false);
-
-	function toggleLampadina() {
-		setIsOn(!isOn);
-	}
+export default function Lampadina(props) {
 
 	return <div className="componente">
 
-		<img src={isOn ? "/yellow_lamp.png" : "/white_lamp.png"} />
-
-		<button onClick={toggleLampadina}>{isOn ? "Spegni" : "Accendi"}</button>
+		<img src={props.isOn ? "/yellow_lamp.png" : "/white_lamp.png"} />
 
 	</div>
 }
