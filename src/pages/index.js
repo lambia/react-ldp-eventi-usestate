@@ -1,6 +1,7 @@
 import Head from "next/head";
 
 import Componente from "@/components/Componente"
+import Contatore from "@/components/Contatore"
 import data from "@/data/data";
 
 export default function Home() {
@@ -16,6 +17,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Componente proprieta={x} />
+      <Contatore />
+
     </>
   );
 }
