@@ -15,4 +15,5 @@ body {
 .componente {
   border: solid 1px crimson;
   padding: 1rem;
+  margin: 1rem 0;
 }
