@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function Lampadina() {
 
-	const [isOn, setIsOn] = useState(false);
+	const [isOn, setIsOn] = useState(true);
 
 	function toggleLampadina() {
 		setIsOn(!isOn);
