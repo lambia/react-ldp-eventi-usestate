@@ -6,7 +6,7 @@ import Contatore from "@/components/Contatore"
 import LampadinaConInterruttore from "@/components/LampadinaConInterruttore"
 import ControlledInput from "@/components/ControlledInput"
 import ToDoList from "@/components/ToDoList"
-
+import Form from "@/components/Form"
 
 import data from "@/data/data";
 
@@ -41,6 +41,8 @@ export default function Home() {
       <ControlledInput />
 
       <ToDoList />
+
+      <Form />
 
     </>
   );
