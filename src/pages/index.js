@@ -3,6 +3,7 @@ import Head from "next/head";
 import Componente from "@/components/Componente"
 import Contatore from "@/components/Contatore"
 import Lampadina from "@/components/Lampadina"
+import LampadinaConInterruttore from "@/components/LampadinaConInterruttore"
 import data from "@/data/data";
 
 import { useState } from "react";
@@ -28,8 +29,10 @@ export default function Home() {
       <Componente proprieta={x} />
       <Contatore />
 
-      <Lampadina isOn={isOn} />
-      <button onClick={toggleLampadina}>{isOn ? "Spegni" : "Accendi"}</button>
+      {/* <Lampadina isOn={isOn} />
+      <button onClick={toggleLampadina}>{isOn ? "Spegni" : "Accendi"}</button> */}
+
+      <LampadinaConInterruttore />
 
     </>
   );

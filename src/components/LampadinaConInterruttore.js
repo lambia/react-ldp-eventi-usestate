@@ -10,8 +10,8 @@ export default function Lampadina() {
 
 	return <div className="componente">
 
-		<img src={isOn ? "/yellow_lamp.png" : "/white_lamp.png"} />
-
+		<img className="mini-lamp" src={isOn ? "/yellow_lamp.png" : "/white_lamp.png"} />
+		<br />
 		<button onClick={toggleLampadina}>{isOn ? "Spegni" : "Accendi"}</button>
 
 	</div>
